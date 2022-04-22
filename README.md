@@ -1,24 +1,59 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Lunch Scheduler
 
-Things you may want to cover:
+> The app has been created in short span of time hence 
+> not all the features are implemented
+> 
+> 
+## Note
 
-* Ruby version
+- Only functional features have been implemented
+- Notification are not implemented
+- Restaurants are hard coded
+- Tests coverage can be further improved
+- Bugs are expected
 
-* System dependencies
+## Features Added
+- Employee Creation
+- Generate uniq groups of people for lunch for the give friday
+- View Groups
 
-* Configuration
+## Tech
 
-* Database creation
+Dillinger uses a number of open source projects to work properly:
 
-* Database initialization
+- [Ruby] - 3.0.0
+- [Rails] - 6.1
+- [Database] - MySql
 
-* How to run the test suite
+## Installation
 
-* Services (job queues, cache servers, search engines, etc.)
+Install the dependencies and devDependencies and start the server.
 
-* Deployment instructions
+```sh
+cd lunch
+bundle
+rails db:prepare RAILS_ENV=development
+rails db:seed RAILS_ENV=development
+rails s
+```
 
-* ...
+## Run Tests
+```sh
+cd lunch
+bundle
+rails db:prepare RAILS_ENV=test
+rails db:seed RAILS_ENV=test
+rspec .
+```
+
+## Available Endpoint Urls
+| Feature           | URL                                   |
+|-------------------|---------------------------------------|
+| Lunch Scheduler   | http://localhost:3000/employees       |
+| List All Groups   | http://localhost:3000/groups          |
+| Create Employee   | http://localhost:3000/employees/new   |
+| Create Team       | http://localhost:3000/teams/new       |
+| List Teams        | http://localhost:3000/teams           |
+| Create Restuarant | http://localhost:3000/restuarants/new |
