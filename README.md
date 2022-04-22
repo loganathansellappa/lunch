@@ -2,12 +2,25 @@
 
 # Lunch Scheduler
 
-> The app has been created in short span of time hence 
-> not all the features are implemented
-> 
-> 
+
+## Available Endpoint Urls
+| Feature           | URL                                   |
+|-------------------|---------------------------------------|
+| Lunch Scheduler   | http://localhost:3000/employees       |
+| List All Groups   | http://localhost:3000/groups          |
+| Create Employee   | http://localhost:3000/employees/new   |
+| Create Team       | http://localhost:3000/teams/new       |
+| List Teams        | http://localhost:3000/teams           |
+| Create Restuarant | http://localhost:3000/restuarants/new |
+
+
+
 ## Note
 
+> The app has been created in short span of time hence
+> not all the features are implemented
+>
+>
 - Only functional features have been implemented
 - Notification are not implemented
 - Restaurants are hard coded
@@ -47,13 +60,3 @@ rails db:prepare RAILS_ENV=test
 rails db:seed RAILS_ENV=test
 rspec .
 ```
-
-## Available Endpoint Urls
-| Feature           | URL                                   |
-|-------------------|---------------------------------------|
-| Lunch Scheduler   | http://localhost:3000/employees       |
-| List All Groups   | http://localhost:3000/groups          |
-| Create Employee   | http://localhost:3000/employees/new   |
-| Create Team       | http://localhost:3000/teams/new       |
-| List Teams        | http://localhost:3000/teams           |
-| Create Restuarant | http://localhost:3000/restuarants/new |
