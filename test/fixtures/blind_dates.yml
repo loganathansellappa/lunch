@@ -1,0 +1,7 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lunch_date: 2022-04-22
+
+two:
+  lunch_date: 2022-04-22

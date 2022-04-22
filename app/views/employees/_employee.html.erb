@@ -1,0 +1,7 @@
+
+<div class="listItem member">
+  <div class="col"><%=  employee.first_name + employee.last_name %></div>
+  <div class="col"><%= employee.email %></div>
+  <div class="col"><%= employee.teams.pluck(:name).join(',') %></div>
+  <div class="col"> <%= check_box_tag "employees[]", employee.id %></div>
+</div>

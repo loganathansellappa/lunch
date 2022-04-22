@@ -1,0 +1,18 @@
+<div class="container">
+
+
+  <div class="list">
+    <div class="listItem header">
+      <div class="col" >Name</div>
+      <div  class="col">Teams</div>
+      <div  class="col">Lunch Date</div>
+      <div  class="col">Is Leader</div>
+      <div  class="col">Restuarant</div>
+    </div>
+    <%= render @groups %>
+  </div>
+  <div class="listItem ">
+    <%= link_to 'Back to employees', employees_path, class: "" %>
+    <%= link_to 'View All Groups', groups_path, class: "" %>
+  </div>
+</div>

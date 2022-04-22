@@ -1,0 +1,22 @@
+<%= form_with(model: blind_date) do |form| %>
+  <% if blind_date.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(blind_date.errors.count, "error") %> prohibited this blind_date from being saved:</h2>
+
+      <ul>
+        <% blind_date.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :lunch_date %>
+    <%= form.date_select :lunch_date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

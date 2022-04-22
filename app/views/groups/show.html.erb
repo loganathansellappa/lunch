@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Employee:</strong>
+  <%= @group.employee_id %>
+</p>
+
+<p>
+  <strong>Blind date:</strong>
+  <%= @group.blind_date_id %>
+</p>
+
+<p>
+  <strong>Leader:</strong>
+  <%= @group.leader_id %>
+</p>
+
+<p>
+  <strong>Restaurant:</strong>
+  <%= @group.restaurant_id %>
+</p>
+
+<%= link_to 'Edit', edit_group_path(@group) %> |
+<%= link_to 'Back', groups_path %>

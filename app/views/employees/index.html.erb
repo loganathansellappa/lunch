@@ -1,0 +1,26 @@
+<div class="container">
+  <%= link_to 'Create New Employee', new_employee_path %>
+  <%= form_tag('/groups') do -%>
+    <div class="chooseDate">
+      <div class="listItem">
+        <div class="">Choose Date For Lunch</div>
+        <div><%= weeks_tag() %></div>
+      </div>
+    </div>
+
+    <div class="list">
+      <div class="listItem header">
+        <div class="col">Name</div>
+        <div  class="col">Email</div>
+        <div  class="col">Team</div>
+        <div  class="col">Interested in Lunch</div>
+      </div>
+       <%= render @employees %>
+      <div class="listItem">
+        <%= submit_tag 'Save' %>
+      </div>
+
+    </div>
+
+  <% end -%>
+</div>

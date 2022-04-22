@@ -1,0 +1,7 @@
+<div class="listItem  <%= group.leader_id.blank? ? 'leader' : 'member'%>">
+  <div class="col"><%= group.employee.first_name + group.employee.last_name %></div>
+  <div class="col"><%= group.employee.teams.pluck(:name).join(',') %></div>
+  <div class="col"><%= group.blind_date.lunch_date %></div>
+  <div class="col"> <%= group.leader_id ? 'No' : 'Yes' %></div>
+  <div class="col"><%= group.restaurant.name %></div>
+</div>
