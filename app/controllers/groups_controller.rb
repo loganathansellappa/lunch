@@ -34,7 +34,7 @@ class GroupsController < ApplicationController
         format.json { render :show, status: :created, location: @groups }
       else
         format.html do
-          redirect_to(employees_path, {:flash => {:error => "Insufficient rights!"}})
+          redirect_to(employees_path, {:flash => {:error => "Group Create Failed, select employees!"}})
         end
 
       end
