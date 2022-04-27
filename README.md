@@ -3,6 +3,7 @@
 # Lunch Scheduler
 
 # Challenge:
+
 Every Friday the employees are grouped to have lunch together in order to get to know each other better. The  team
 has grown a lot in the past months, so it is hard to follow-up with groups, restaurants, etc.
 
@@ -14,6 +15,7 @@ different groups.
 Every week, new groups are supposed to be different than in the previous weeks.
 The app should ask all DG employees if they want to go out for lunch. After collecting responses, the groups and leaders should be
 generated and notified.
+
 The leaders can choose a restaurant and share it with their group.
 • You can choose a way of asking/notifying users;
 • Try to follow all the steps as much as you can, but if you are not able to finish something, or do not know how, do not worry. We
@@ -21,7 +23,6 @@ would appreciate explanation of the issue.
 • Be creative! If you can add some easy feature that might help us, feel free to add it and write a short explanation.
 Set up a private Git repository, git bundle it and share it with us in a zip file.
 
-Expectations:
 Minimum Expectations:
 • 4 models (Employees, Teams, MappingEmployeeTeams (join table), BlindDates to store the output for each week)
 • 1 BlindDates controller & 1 BlindDates helper
@@ -45,19 +46,6 @@ Minimum Expectations:
 | List Teams        | http://localhost:3000/teams           |
 | Create Restuarant | http://localhost:3000/restuarants/new |
 
-
-
-## Note
-
-> The app has been created in short span of time hence
-> not all the features are implemented
->
->
-- Only functional features have been implemented
-- Notification are not implemented
-- Restaurants are hard coded
-- Tests coverage can be further improved
-- Bugs are expected
 
 ## Features Added
 - Employee Creation
